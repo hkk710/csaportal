@@ -1,68 +1,88 @@
-@extends('layouts.app')
-
-@section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Login</div>
-                <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
-                        {{ csrf_field() }}
-
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
-
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Login
-                                </button>
-
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    Forgot Your Password?
-                                </a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+    <!DOCTYPE html>
+    <html>
+    <meta charset="UTF-8">
+    <title>Login / Register</title>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+        <link rel="stylesheet" href="/css/auth.css">
+<body style="background-color:#b489f9;">
+@if (count($errors) > 0)
+    <div class="alert alert-danger">
+        <a href="#" data-dismiss="alert" class="close">&times;</a>
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
     </div>
-</div>
-@endsection
+@endif
+
+    <div class="container">
+      <div class="card"></div>
+      <div class="card">
+        <h1 class="title">Login</h1>
+        <form action="/login" method="post">
+            {{ csrf_field() }}
+          <div class="input-container">
+            <input type="#{type}" id="#{label}" name="name">
+            <label for="#{label}">Username</label>
+            <div class="bar"></div>
+          </div>
+          <div class="input-container">
+            <input type="password" id="#{label}" name="password">
+            <label for="#{label}">Password</label>
+            <div class="bar"></div>
+          </div>
+          <div class="button-container">
+            <button><span>Go</span></button>
+          </div>
+          <div class="footer"><a href="/password/reset">Forgot your password?</a></div>
+        </form>
+      </div>
+      <div class="card alt">
+        <div class="toggle"></div>
+        <h1 class="title">Register
+          <div class="close"></div>
+        </h1>
+        <form action="/register" method="post">
+            {{ csrf_field() }}
+            <div class="input-container">
+              <input type="#{type}" id="#{label}" name="name">
+              <label for="#{label}">Username</label>
+              <div class="bar"></div>
+            </div>
+          <div class="input-container">
+            <input type="email" id="#{label}" name="email">
+            <label for="#{label}">Email</label>
+            <div class="bar"></div>
+          </div>
+          <div class="input-container">
+            <input type="number" id="#{label}" name="phonenumber">
+            <label for="#{label}">Phone Number</label>
+            <div class="bar"></div>
+          </div>
+          <div class="input-container">
+            <input type="text" id="#{label}" name="rollnumber">
+            <label for="#{label}">Roll Number</label>
+            <div class="bar"></div>
+          </div>
+          <div class="input-container">
+            <input type="password" id="#{label}" name="password">
+            <label for="#{label}">Password</label>
+            <div class="bar"></div>
+          </div>
+          <div class="input-container">
+            <input type="password" id="#{label}" name="password_confirmation">
+            <label for="#{label}">Repeat Password</label>
+            <div class="bar"></div>
+          </div>
+          <div class="button-container">
+            <button><span>Next</span></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="/js/app.js"></script>
+        <script src="/js/auth.js"></script>
+    </body>
+</html>
