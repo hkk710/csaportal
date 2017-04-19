@@ -13,20 +13,16 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 Auth::routes();
-
 Route::get('/home', 'HomeController@index');
-
+Route::post('/send', 'MailController@send');
+Route::get('/webteam', 'WebteamController@index');
+Route::post('subscriber', 'SubscriberController@store')->name('subscriber');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
     Route::middleware('admin.user')->get('/mail', 'AdminController@getMail');
     Route::middleware('admin.user')->post('/mail/send', 'AdminController@postMail');
-});
-
-
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
 });

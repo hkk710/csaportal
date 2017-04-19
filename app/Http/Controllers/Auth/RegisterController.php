@@ -74,8 +74,7 @@ class RegisterController extends Controller
         ]);
 
          Subscriber::create([
-            'name' => $data['name'],
-            'email'=> $data['email']
+            'email'=> $data['email'],
         ]);
         return $user;
     }
