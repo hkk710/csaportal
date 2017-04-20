@@ -17,8 +17,9 @@
     <span class="text">LOGIN</span>
     <span class="loader"></span>
   </header>
-  <form class="form">
-    <input class="input" type="text", placeholder="Username" name="username">
+  <form class="form" method="post">
+      {{ csrf_field() }}
+    <input class="input" type="email" placeholder="Username" name="email">
     <input class="input" type="password" placeholder="Password" name="password">
     <button class="btn" type="submit"></button>
   </form>
