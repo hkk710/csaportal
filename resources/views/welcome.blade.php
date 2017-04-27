@@ -133,23 +133,22 @@ h1#main{
 </section><!--main-section-end-->
 
 
-
 <section class="main-section alabaster"><!--main-section alabaster-start-->
 	<div class="container">
     	<div class="row">
 			<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
-            	<img  src="img/iphone.png" alt="">
+            	<img  src="img/carrer.png" alt="">
             </figure>
         	<div class="col-lg-7 col-sm-8 featured-work">
-            	<h2>featured work</h2>
-            	<P class="padding-b">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</P>
+            	<h2>Career Paths</h2>
+            	<P class="padding-b">Whether its BCA or MCA , each one offers a high quality and high rewarding carrer ahead.</P>
             	<div class="featured-box">
-                	<div class="featured-box-col1 wow fadeInRight delay-02s">
+              <div class="featured-box-col1 wow fadeInRight delay-02s">
                     	<i class="fa-magic"></i>
                     </div>
                 	<div class="featured-box-col2 wow fadeInRight delay-02s">
-                        <h3>magic of theme development</h3>
-                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+                        <h3>Excellent Placements</h3>
+                        <p>Be placed as a tester/developer in a good reputed company. It depends on the final projet that youu are doing </p>
                     </div>
                 </div>
                 <div class="featured-box">
@@ -157,8 +156,8 @@ h1#main{
                     	<i class="fa-gift"></i>
                     </div>
                 	<div class="featured-box-col2 wow fadeInRight delay-04s">
-                        <h3>neatly packaged</h3>
-                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+                        <h3>Internship Abroad and MS</h3>
+                        <p>Final Semester can be aboard and pursue MS after internship / project. </p>
                     </div>
                 </div>
                 <div class="featured-box">
@@ -166,8 +165,71 @@ h1#main{
                     	<i class="fa-dashboard"></i>
                     </div>
                 	<div class="featured-box-col2 wow fadeInRight delay-06s">
-                        <h3>SEO optimized</h3>
-                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+                        <h3>Higher Studies in MCA or MBA</h3>
+                        <p>Join MCA lateral entry scheme directly to second year.
+                          <br>
+
+                           Join MBA Systems / Marketing. IT exposure is good </p>
+                    </div>
+                    <div class="featured-box-col1 wow fadeInRight delay-06s">
+                      	<i class="fa-dashboard"></i>
+                      </div>
+                      <br>
+                  	<div class="featured-box-col2 wow fadeInRight delay-06s">
+                      <h3>MSc CS/IT</h3>
+                      <p>Join M.Sc. / IT and get job in teaching / research projects</p>
+                    </div>
+                </div>
+                <a class="Learn-More" href="#">Learn More</a>
+            </div>
+        </div>
+	</div>
+</section><!--main-section alabaster-end-->
+
+
+
+<section class="main-section alabaster"><!--main-section alabaster-start-->
+	<div class="container">
+    	<div class="row">
+			<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
+            	<img  src="img/carrer.png" alt="">
+            </figure>
+        	<div class="col-lg-7 col-sm-8 featured-work">
+            	<h2>KNOWLEDGE HUB</h2>
+            	<P class="padding-b">Stay Up to date on the current trends in history.</P>
+            	<div class="featured-box">
+              <div class="featured-box-col1 wow fadeInRight delay-02s">
+                    	<i class="fa-magic"></i>
+                    </div>
+                	<div class="featured-box-col2 wow fadeInRight delay-02s">
+                        <h3>Blog Updates</h3>
+                        <p>An always updated blog which covers various informations from the technlogoical world. </p>
+                    </div>
+                </div>
+                <div class="featured-box">
+                	<div class="featured-box-col1 wow fadeInRight delay-04s">
+                    	<i class="fa-gift"></i>
+                    </div>
+                	<div class="featured-box-col2 wow fadeInRight delay-04s">
+                        <h3>References</h3>
+                        <p>A collection of Reference materials and Text books from various fields of technology </p>
+                    </div>
+                </div>
+                <div class="featured-box">
+                	<div class="featured-box-col1 wow fadeInRight delay-06s">
+                    	<i class="fa-dashboard"></i>
+                    </div>
+                	<div class="featured-box-col2 wow fadeInRight delay-06s">
+                        <h3>Events and Festivals</h3>
+                        <p>A completely updated section which gives informations about the upcoming technical fests and competitions. </p>
+                    </div>
+                    <div class="featured-box-col1 wow fadeInRight delay-06s">
+                      	<i class="fa-dashboard"></i>
+                      </div>
+                      <br>
+                  	<div class="featured-box-col2 wow fadeInRight delay-06s">
+                      <h3>Online Micro - Courses</h3>
+                      <p>Information of several online courses offered by different universities and platforms that will help you to excel in your career.</p>
                     </div>
                 </div>
                 <a class="Learn-More" href="#">Learn More</a>
@@ -180,7 +242,7 @@ h1#main{
 
 <section class="main-section paddind" id="Portfolio"><!--main-section-start-->
 	<div class="container">
-    	<h2>Portfolio</h2>
+    	<h2>Gallery</h2>
     	<h6>Fresh portfolio of designs that will keep you wanting more.</h6>
       <div class="portfolioFilter">
         <ul class="Portfolio-nav wow fadeIn delay-02s">
