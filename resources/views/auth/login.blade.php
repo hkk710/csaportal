@@ -19,13 +19,11 @@
   </header>
   <form class="form" method="post">
       {{ csrf_field() }}
-    <input class="input" type="email" placeholder="Username" name="email">
-    <input class="input" type="password" placeholder="Password" name="password">
+    <input class="input" type="email" style="font-size:20px;" placeholder="Username" name="email">
+    <input class="input" type="password" style="font-size:20px;" placeholder="Password" name="password">
     <button class="btn" type="submit"></button>
   </form>
 </div>
-<button class ="resetbtn" type= "reset">Reset it
-</button>
  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
     <script src="js/index.js"></script>

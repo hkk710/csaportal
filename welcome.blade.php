@@ -67,8 +67,8 @@ h1#main{
         <ul class="main-nav" style="background-color:#000;color:#fff;max-height:100px;">
             <li><a href="#know" style="color:#7cc576;">Know our department</a></li>
             <li><a href="#career" style="color:#7cc576;">Carrer Paths</a></li>
-            <li><a href="#hub" style="color:#7cc576;">Knowledge Hub</a></li>
-            <li><a href="/login" style="color:#7cc576;">Student Corner</a></li>
+            <li><a href="#knowledge" style="color:#7cc576;">Knowledge Hub</a></li>
+            <li><a href="#login" style="color:#7cc576;">Student Corner</a></li>
             <li>
             <figure class="logo animated fadeInDown delay-07s" style="background-color:#000;max-height:67px;border-radius:20px;">
                 <a href="#"><img src="img/new.gif" style="max-height:50px;" alt=""></a>
@@ -133,7 +133,7 @@ h1#main{
 </section><!--main-section-end-->
 
 
-<section class="main-section alabaster" id="career"><!--main-section alabaster-start-->
+<section class="main-section alabaster"><!--main-section alabaster-start-->
 	<div class="container">
     	<div class="row">
 			<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
@@ -188,7 +188,7 @@ h1#main{
 
 
 
-<section class="main-section alabaster" id="hub"><!--main-section alabaster-start-->
+<section class="main-section alabaster"><!--main-section alabaster-start-->
 	<div class="container">
     	<div class="row">
 			<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
@@ -243,51 +243,52 @@ h1#main{
 <section class="main-section paddind" id="Portfolio"><!--main-section-start-->
 	<div class="container">
     	<h2>Gallery</h2>
-    	<h6>“Success doesn’t come to you, you’ve got to go to it.” </h6>
+    	<h6>Fresh portfolio of designs that will keep you wanting more.</h6>
       <div class="portfolioFilter">
         <ul class="Portfolio-nav wow fadeIn delay-02s">
         	<li><a href="#" data-filter="*" class="current" >All</a></li>
-            <li><a href="#" data-filter=".academics" >Academics</a></li>
+            <li><a href="#" data-filter=".branding" >Branding</a></li>
             <li><a href="#" data-filter=".webdesign" >Web design</a></li>
-            <li><a href="#" data-filter=".sports" >Sports</a></li>
-            <li><a href="#" data-filter=".cultural" >Cultural events</a></li>
+            <li><a href="#" data-filter=".printdesign" >Print design</a></li>
+            <li><a href="#" data-filter=".photography" >Photography</a></li>
         </ul>
        </div>
 
 	</div>
     <div class="portfolioContainer wow fadeInUp delay-04s">
-            	<div class=" Portfolio-box academics">
-                	<a href="#"><img src="img/academics.jpg" alt=""></a>
+            	<div class=" Portfolio-box printdesign">
+                	<a href="#"><img src="img/Portfolio-pic1.jpg" alt=""></a>
                 	<h3>Foto Album</h3>
                     <p>Print Design</p>
                 </div>
                 <div class="Portfolio-box webdesign">
-                	<a href="#"><img src="img/webdesign.jpg" alt=""></a>
+                	<a href="#"><img src="img/Portfolio-pic2.jpg" alt=""></a>
                 	<h3>Luca Theme</h3>
                     <p>Web Design</p>
                 </div>
-                <div class=" Portfolio-box sports">
-                	<a href="#"><img src="img/sports.jpg" alt=""></a>
+                <div class=" Portfolio-box branding">
+                	<a href="#"><img src="img/Portfolio-pic3.jpg" alt=""></a>
                 	<h3>Uni Sans</h3>
                     <p>Branding</p>
                 </div>
-                <div class=" Portfolio-box cultural" >
-                	<a href="#"><img src="img/cul.png" alt=""></a>
+                <div class=" Portfolio-box photography" >
+                	<a href="#"><img src="img/Portfolio-pic4.jpg" alt=""></a>
                 	<h3>Vinyl Record</h3>
                     <p>Photography</p>
                 </div>
-                <div class=" Portfolio-box academics">
-                	<a href="#"><img src="img/academics.jpg" alt=""></a>
+                <div class=" Portfolio-box branding">
+                	<a href="#"><img src="img/Portfolio-pic5.jpg" alt=""></a>
                 	<h3>Hipster</h3>
                     <p>Branding</p>
                 </div>
-                <div class=" Portfolio-box webdesign">
-                	<a href="#"><img src="img/webdesign.jpg" alt=""></a>
+                <div class=" Portfolio-box photography">
+                	<a href="#"><img src="img/Portfolio-pic6.jpg" alt=""></a>
                 	<h3>Windmills</h3>
                     <p>Photography</p>
                 </div>
     </div>
 </section><!--main-section-end-->
+
 <!--
 <section class="main-section client-part" id="client">
 	<div class="container">
@@ -307,8 +308,6 @@ we were well fed and drunk all the time!</p>
         </ul>
     </div>
 </section>
-
-
 <div class="c-logo-part">
 	<div class="container">
     	<ul>
@@ -320,7 +319,60 @@ we were well fed and drunk all the time!</p>
     	</ul>
 	</div>
 </div>
--->
+<section class="main-section team" id="team">
+	<div class="container">
+        <h2>team</h2>
+        <h6>Take a closer look into our amazing team. We won’t bite.</h6>
+        <div class="team-leader-block clearfix">
+            <div class="team-leader-box">
+                <div class="team-leader wow fadeInDown delay-03s">
+                    <div class="team-leader-shadow"><a href="#"></a></div>
+                    <img src="img/team-leader-pic1.jpg" alt="">
+                    <ul>
+                        <li><a href="#" class="fa-twitter"></a></li>
+                        <li><a href="#" class="fa-facebook"></a></li>
+                        <li><a href="#" class="fa-pinterest"></a></li>
+                        <li><a href="#" class="fa-google-plus"></a></li>
+                    </ul>
+                </div>
+                <h3 class="wow fadeInDown delay-03s">Walter White</h3>
+                <span class="wow fadeInDown delay-03s">Chief Executive Officer</span>
+                <p class="wow fadeInDown delay-03s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
+            </div>
+            <div class="team-leader-box">
+                <div class="team-leader  wow fadeInDown delay-06s">
+                    <div class="team-leader-shadow"><a href="#"></a></div>
+                    <img src="img/team-leader-pic2.jpg" alt="">
+                    <ul>
+                        <li><a href="#" class="fa-twitter"></a></li>
+                        <li><a href="#" class="fa-facebook"></a></li>
+                        <li><a href="#" class="fa-pinterest"></a></li>
+                        <li><a href="#" class="fa-google-plus"></a></li>
+                    </ul>
+                </div>
+                <h3 class="wow fadeInDown delay-06s">Jesse Pinkman</h3>
+                <span class="wow fadeInDown delay-06s">Product Manager</span>
+                <p class="wow fadeInDown delay-06s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
+            </div>
+            <div class="team-leader-box">
+                <div class="team-leader wow fadeInDown delay-09s">
+                    <div class="team-leader-shadow"><a href="#"></a></div>
+                    <img src="img/team-leader-pic3.jpg" alt="">
+                    <ul>
+                        <li><a href="#" class="fa-twitter"></a></li>
+                        <li><a href="#" class="fa-facebook"></a></li>
+                        <li><a href="#" class="fa-pinterest"></a></li>
+                        <li><a href="#" class="fa-google-plus"></a></li>
+                    </ul>
+                </div>
+                <h3 class="wow fadeInDown delay-09s">Skyler white</h3>
+                <span class="wow fadeInDown delay-09s">Accountant</span>
+                <p class="wow fadeInDown delay-09s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
+            </div>
+        </div>
+    </div>
+</section>--><!--main-section team-end-->
+
 
 
 <section class="business-talking"><!--business-talking-start-->

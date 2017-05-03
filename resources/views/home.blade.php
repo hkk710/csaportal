@@ -1,4 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : FullStrength
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130902
+
+-->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -16,17 +27,17 @@
 <div id="header" class="container" style="background-color:#000;">
 	<div id="logo">
         <figure class="logo animated fadeInDown delay-07s" style="background-color:#000;max-height:67px;border-radius:1px;">
-            <a href="/"><img src="img/new.gif" style="max-height:50px; padding-left:30px;" alt=""></a>
+            <a href="#"><img src="img/new.gif" style="max-height:50px; padding-left:30px;" alt=""></a>
         </figure>
-		<h1><a href="/">CSA Portal</a></h1>
+		<h1><a href="#">CSA Portal</a></h1>
 	</div>
 	<div id="menu">
 		<ul>
-			<li class="current_page_item"><a href="/home" accesskey="1" title="">HOME</a></li>
-			<li><a href="#" accesskey="2" title="">Profile</a></li>
+			<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
+			<li><a href="#" accesskey="2" title="">Our Clients</a></li>
 			<li><a href="#" accesskey="3" title="">About Us</a></li>
 			<li><a href="#" accesskey="4" title="">Careers</a></li>
-			<li><a href="" accesskey="5" title="">logout</a></li>
+			<li><a href="#" accesskey="5" title="">Contact Us</a></li>
 		</ul>
 	</div>
 </div>
@@ -98,7 +109,7 @@
 	</div>
 </div>
 <div id="copyright" class="container">
-	<p>Copyright (c) 2017 CSA PORTAL All rights reserved. | Design by <a href="/webteam" >webteam</a></p>
+	<p>Copyright (c) 2013 Sitename.com. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a>.</p>
 </div>
 </body>
 </html>
