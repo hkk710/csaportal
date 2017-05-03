@@ -16,6 +16,7 @@ Route::get('/', function () {
 })->name('home');
 Auth::routes();
 Route::get('/home', 'HomeController@index');
+Route::get('/profile', 'HomeController@profile');
 Route::post('/send', 'MailController@send');
 Route::get('/webteam', 'WebteamController@index');
 Route::post('subscriber', 'SubscriberController@store')->name('subscriber');

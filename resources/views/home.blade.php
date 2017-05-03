@@ -1,15 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 2.5 License
+<!DOCTYPE html >
 
-Name       : FullStrength
-Description: A two-column, fixed-width design with dark color scheme.
-Version    : 1.0
-Released   : 20130902
-
--->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -19,8 +9,6 @@ Released   : 20130902
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
 <link rel="stylesheet" href="css/font.css">
 <link rel="stylesheet" href="css/default.css">
-
-<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
 </head>
 <body style="background-color:#000;">
@@ -33,11 +21,11 @@ Released   : 20130902
 	</div>
 	<div id="menu">
 		<ul>
-			<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
-			<li><a href="#" accesskey="2" title="">Our Clients</a></li>
+			<li class="current_page_item"><a href="/home" accesskey="1" title="">Homepage</a></li>
+			<li><a href="/profile" accesskey="2" title="">Profile</a></li>
 			<li><a href="#" accesskey="3" title="">About Us</a></li>
 			<li><a href="#" accesskey="4" title="">Careers</a></li>
-			<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+			<li><a href="{{ url('/logout') }}" accesskey="5" title="">logout</a></li>
 		</ul>
 	</div>
 </div>
