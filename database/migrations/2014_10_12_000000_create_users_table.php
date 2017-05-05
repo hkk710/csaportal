@@ -21,9 +21,9 @@ class CreateUsersTable extends Migration
             $table->string('phonenumber')->nullable()->unique();
             $table->string('email')->unique();
             $table->string('gender')->nullable();
-//            $table->string('country');
+            $table->string('country')->nullable();
             $table->string('hostellite')->nullable();
-//            $table->string('bloodgroup');
+            $table->string('bloodgroup')->nullable();
             $table->boolean('approved')->default(false);
             $table->string('password');
             $table->rememberToken();

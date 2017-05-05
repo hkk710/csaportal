@@ -103,6 +103,36 @@
                                     </div>
                                 </div>
 
+
+                                <div class="form-group{{ $errors->has('country') ? ' has-error' : '' }}">
+                                    <label for="country" class="col-md-4 control-label">Nationality:</label>
+
+                                    <div class="col-md-6">
+                                        <input id="country" type="text" class="form-control" name="country" value="{{ old('country') }}" required>
+
+                                        @if ($errors->has('country'))
+                                            <span class="help-block">
+                                                <strong>{{ $errors->first('country') }}</strong>
+                                            </span>
+                                        @endif
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group{{ $errors->has('bloodgroup') ? ' has-error' : '' }}">
+                                    <label for="bloodgroup" class="col-md-4 control-label">E-Mail Address</label>
+
+                                    <div class="col-md-6">
+                                        <input id="bloodgroup" type="text" class="form-control" name="bloodgroup" value="{{ old('bloodgroup') }}" required>
+
+                                        @if ($errors->has('bloodgroup'))
+                                            <span class="help-block">
+                                                <strong>{{ $errors->first('bloodgroup') }}</strong>
+                                            </span>
+                                        @endif
+                                    </div>
+                                </div>
+
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-4 control-label">Password</label>
 
