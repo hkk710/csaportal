@@ -7,7 +7,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Register</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ route('register') }}">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('fname') ? ' has-error' : '' }}">
@@ -120,7 +120,7 @@
 
 
                                 <div class="form-group{{ $errors->has('bloodgroup') ? ' has-error' : '' }}">
-                                    <label for="bloodgroup" class="col-md-4 control-label">E-Mail Address</label>
+                                    <label for="bloodgroup" class="col-md-4 control-label">Blood Group</label>
 
                                     <div class="col-md-6">
                                         <input id="bloodgroup" type="text" class="form-control" name="bloodgroup" value="{{ old('bloodgroup') }}" required>
@@ -152,6 +152,20 @@
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('profile_picture') ? ' has-error' : '' }}">
+                            <label for="profile_picture" class="col-md-4 control-label">Profile Picture</label>
+
+                            <div class="col-md-6">
+                                <input id="profile_picture" type="file" class="form-control" name="profile_picture" required>
+
+                                @if ($errors->has('profile_picture'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('profile_picture') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
 

@@ -26,7 +26,10 @@
 			<li class="current_page_item"><a href="#" accesskey="2" title="">Profile</a></li>
 			<li><a href="#" accesskey="3" title="">About Us</a></li>
 			<li><a href="#" accesskey="4" title="">Careers</a></li>
-			<li><a href="{{ url('/logout') }}" accesskey="5" title="">logout</a></li>
+			<li><a href="#" accesskey="5" title="" onclick="document.getElementById('logout-form').submit();">logout</a></li>
+			<form class="hidden" action="{{ url('/logout') }}" method="post" id="logout-form">
+				{{ csrf_field() }}
+			</form>
 		</ul>
 	</div>
 </div>
@@ -45,7 +48,7 @@
 
             <div class="box-body">
                      <div class="col-sm-6">
-                     <div  align="center"> <img alt="User Pic" src="img/hari710.png" id="profile-image1" class="img-circle img-responsive">
+                     <div  align="center"> <img alt="User Pic" src="{{ asset(Auth::user()->pro_pic) }}" id="profile-image1" class="img-circle img-responsive">
 
                 <input id="profile-image-upload" class="hidden" type="file">
                 <!--Upload Image Js And Css-->

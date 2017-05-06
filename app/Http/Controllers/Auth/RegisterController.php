@@ -7,6 +7,8 @@ use App\Subscriber;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Image;
+use Illuminate\Support\Facades\Input;
 
 class RegisterController extends Controller
 {
@@ -59,6 +61,7 @@ class RegisterController extends Controller
             'hostellite' => 'required',
         //    'bloodgroup'=> 'required',
             'password' => 'required|min:6|confirmed',
+            'profile_picture' => 'required|image'
         ]);
     }
 
@@ -70,6 +73,10 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $image = Input::file('profile_picture');
+        $filename = time() . '.' . $image->getClientOriginalExtension();
+        $location = public_path('img/profile/' . $filename);
+        Image::make($image)->resize(800, 600)->save($location);
         $user = User::create([
             'fname' => $data['fname'],
             'lname' => $data['lname'],
@@ -81,6 +88,7 @@ class RegisterController extends Controller
             'country' => $data['country'],
             'bloodgroup' => $data['bloodgroup'],
             'password' => bcrypt($data['password']),
+            'pro_pic' => "/img/profile/" . $filename,
         ]);
 
          Subscriber::create([

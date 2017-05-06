@@ -26,6 +26,7 @@ class CreateUsersTable extends Migration
             $table->string('bloodgroup')->nullable();
             $table->boolean('approved')->default(false);
             $table->string('password');
+            $table->string('pro_pic');
             $table->rememberToken();
             $table->timestamps();
         });
