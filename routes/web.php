@@ -29,6 +29,10 @@ Route::group(['prefix' => 'admin'], function () {
 
 Route::group(['prefix' => 'teacher'], function() {
     Route::get('/', 'TeachersController@index');
+    Route::get('/mark', 'TeachersController@showMark');
+    Route::post('/mark', 'TeachersController@showPostMark');
+    Route::get('/mark/create', 'TeachersController@showMarkCreate');
+    Route::post('/mark/create', 'TeachersController@postMarkCreate');
     Route::get('/login', 'TeacherLoginController@ShowLogin');
     Route::post('/login', 'TeacherLoginController@PostLogin');
     Route::get('/register', 'TeacherLoginController@ShowRegister');
