@@ -57,9 +57,9 @@ class RegisterController extends Controller
             'phonenumber' => 'required|max:12|min:10|unique:users',
             'email' => 'required|email|max:255|unique:users',
             'gender' => 'required',
-        //    'country' => 'required',
+            'country' => 'required',
             'hostellite' => 'required',
-        //    'bloodgroup'=> 'required',
+            'bloodgroup'=> 'required',
             'password' => 'required|min:6|confirmed',
             'profile_picture' => 'required|image'
         ]);

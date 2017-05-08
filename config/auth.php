@@ -45,6 +45,15 @@ return [
             'driver' => 'token',
             'provider' => 'users',
         ],
+        'teacher' => [
+            'driver' => 'session',
+            'provider' => 'teachers',
+        ],
+
+        'teacher-api' => [
+            'driver' => 'token',
+            'provider' => 'teachers',
+        ],
     ],
 
     /*
@@ -68,6 +77,10 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
+        ],
+        'teachers' => [
+            'driver' => 'eloquent',
+            'model' => App\Teacher::class,
         ],
 
         // 'users' => [
