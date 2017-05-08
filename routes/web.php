@@ -26,3 +26,11 @@ Route::group(['prefix' => 'admin'], function () {
     Route::middleware('admin.user')->get('/mail', 'AdminController@getMail');
     Route::middleware('admin.user')->post('/mail/send', 'AdminController@postMail');
 });
+
+Route::group(['prefix' => 'teacher'], function() {
+    Route::get('/', 'TeachersController@index');
+    Route::get('/login', 'TeacherLoginController@ShowLogin');
+    Route::post('/login', 'TeacherLoginController@PostLogin');
+    Route::get('/register', 'TeacherLoginController@ShowRegister');
+    Route::post('/register', 'TeacherLoginController@PostRegister');
+});

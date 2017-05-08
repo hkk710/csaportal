@@ -7,7 +7,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Register</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
+                    <form class="form-horizontal" role="form" method="POST" enctype="multipart/form-data">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('fname') ? ' has-error' : '' }}">
@@ -33,20 +33,6 @@
                                 @if ($errors->has('lname'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('lname') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('rollnumber') ? ' has-error' : '' }}">
-                            <label for="rollnumber" class="col-md-4 control-label">Roll Number</label>
-
-                            <div class="col-md-6">
-                                <input id="rollnumber" type="text" class="form-control" name="rollnumber" value="{{ old('rollnumber') }}">
-
-                                @if ($errors->has('rollnumber'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('rollnumber') }}</strong>
                                     </span>
                                 @endif
                             </div>
