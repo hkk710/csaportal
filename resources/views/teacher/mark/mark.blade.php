@@ -14,6 +14,28 @@
 <link rel="stylesheet" href="/css/filter.css">
 <script type="text/javascript" src="/js/app.js"></script>
 <script type="text/javascript" src="/js/filter.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['GRADE', 'NUMBER OF STUDENTS'],
+          ['A',     {{count(App\Mark::all()->where('grade','=','A'))  }}],
+          ['B',     {{count(App\Mark::all()->where('grade','=','B'))  }}],
+          ['C',     {{count(App\Mark::all()->where('grade','=','C'))  }}],
+          ['F',     {{count(App\Mark::all()->where('grade','=','F'))  }}]
+        ]);
+
+        var options = {
+          title: 'My Daily Activities',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
 </head>
 <body style="background-color:#000;">
 <div id="header" class="container" style="background-color:#000;">
@@ -67,7 +89,7 @@
                 </div>
             </form>
         </div>
-		@isset($marks)
+		@if(isset($marks))
 			<div class="col-sm-12" style="margin-top: 30px;">
 				<table class="table table-bordered table-striped table-hover">
 					<thead>
@@ -98,9 +120,12 @@
 			<script type="text/javascript">
 				$('table').dataTable();
 			</script>
-		@endisset
+		@endif
+
     </div>
 </div>
+
+
 <script type="text/javascript">
     $('#branch').change(function(e) {
         if (e.target.value == "BCA") {
@@ -113,4 +138,5 @@
         }
     })
 </script>
+<div id="piechart_3d" style="width: 1685px; height: 500px;"></div>
 </body>
