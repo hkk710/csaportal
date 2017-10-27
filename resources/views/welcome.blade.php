@@ -259,12 +259,12 @@ h1#main{
             	<div class=" Portfolio-box academics">
                 	<a href="#"><img src="img/academics.jpg" alt=""></a>
                 	<h3>Foto Album</h3>
-                    <p>Print Design</p>
+                    <p></p>
                 </div>
                 <div class="Portfolio-box webdesign">
                 	<a href="#"><img src="img/webdesign.jpg" alt=""></a>
-                	<h3>Luca Theme</h3>
-                    <p>Web Design</p>
+                	<h3></h3>
+                    <p></p>
                 </div>
                 <div class=" Portfolio-box sports">
                 	<a href="#"><img src="img/sports.jpg" alt=""></a>
